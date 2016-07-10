@@ -1,7 +1,10 @@
+<div class="ask-question">
+  <%= link_to('Ask a Question', new_question_path(@question)) %><br>
+</div>
+
 <h1>Questions</h1>
 
 <% @questions.each do |question| %>
   <%= link_to question.title, question %><br>
 <% end %>
 
-<%= link_to('Ask a Question', new_question_path(@question)) %><br>
