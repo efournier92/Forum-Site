@@ -1,62 +1,14 @@
-### Introduction
+#Stack Overflow Clone Site
 
-In this challenge, you will build a website like [stackoverflow.com](http://stackoverflow.com/) for posting questions and answers. This is a *large* challenge. Expect that it will take a few days of work to complete.
+This repo contains a Rails app I built while studying at Launch Academy in Boston. The assignment was to build a website similar to [stackoverflow.com](http://stackoverflow.com/), for posting questions and answers.
 
-### Prerequisites
+**I did the exercise mainly to practice the following:**
+* Building a Rails app from scratch
+* Using Rails routes
+* Using Rails form helpers
+* Using Active Record associations
 
-**If you're not yet comfortable with the basics of Rails, please go through the official [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html) guide.**
-
-### Learning Objectives
-
-- Build a Rails app
-- Compare Rails to Sinatra
-- Practice using Rails routes
-- Practice using Rails form helpers
-- Practice using Active Record associations
-
-### Resources
-
-- [Getting Started with Rails](http://guides.rubyonrails.org/getting_started.html)
-- [Rails Routing from the Outside In](http://guides.rubyonrails.org/routing.html)
-- [Rails Form Helpers](http://guides.rubyonrails.org/form_helpers.html)
-- [Active Record Query Interface](http://guides.rubyonrails.org/active_record_querying.html)
-- [Active Record Associations](http://guides.rubyonrails.org/association_basics.html)
-- [Working with Validation Errors](http://edgeguides.rubyonrails.org/active_record_validations.html#working-with-validation-errors)
-- [Displaying Errors in Views](http://edgeguides.rubyonrails.org/active_record_validations.html#displaying-validation-errors-in-views)
-
-### Hints
-
-* When creating a migration in Rails you can use a Rails generator command rather than `rake db:create_migration`. The format of the command is `rails generate migration <name_of_migration>`. For example, to create a migration to add a `questions` table you might run:
-
-```no-highlight
-$ rails generate migration create_questions
-    invoke  active_record
-    create    db/migrate/20140612171601_create_questions.rb
-```
-
-* Creating forms in Rails requires a bit of extra setup. Rather than hardcoding the `<form>` element in HTML you can use the `form_for` helper method in your views. You can read about the `form_for` helper [here][forms_for_models].
-
-* Use Git to save the state of your code each time you complete a user story (or more often if it's a complex user story). Try using Git branches to store all commits related to a particular feature and then merge back into *master* when the feature is complete.
-
-### Getting Started
-
-Start with a new Rails application configured with PostgreSQL:
-
-```no-highlight
-# Generate a new Rails app that is set up for PostgreSQL and skips test setup
-$ rails new rescue_mission --database=postgresql --skip-test-unit --skip-turbolinks
-$ cd rescue_mission
-$ git init
-$ git add -A
-$ git commit -m 'Initial commit'
-```
-
-The set up portion of this exercise can be completed after reading about the following:
-- [Rails Introduction][intro-to-rails]
-- [Rails Routes][rails-routes]
-- [Rails Controllers][rails-controllers]
-
-### User Stories
+###Models 
 
 The application should support the following user stories. Review all of the user stories before beginning to get a sense of the scope of the project. Consider how you'll structure information within the database and sketch an initial ER diagram.
 
