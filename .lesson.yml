@@ -1,7 +1,0 @@
----
-title: "Rescue Mission"
-type: "challenge"
-description: "Build a website like stackoverflow.com for posting questions and answers."
-tags: "rails"
-ignore:
-- "rescue-mission.md"
