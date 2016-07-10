@@ -13,7 +13,7 @@ This repo contains a Rails app I built while studying at Launch Academy in Bosto
 * Question
   * title
   * description
-  * Answer
+* Answer
   * question_id
   * description
 
