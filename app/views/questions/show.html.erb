@@ -1,15 +1,18 @@
 <%= flash[:notice] %>
 
-<h2><%= @question.title %></h2>
-<%= @question.description %><br>
+<h2>
+  <%= @question.title %>
+</h2>
+<%= @question.description %><br><br>
 
-<br><%= link_to('Edit This Question', edit_question_path(@question)) %><br>
+<%= link_to('Edit This Question', edit_question_path(@question)) %><br>
 <%= link_to('Delete This Question', @question, method: :delete) %><br>
-
 <%= link_to('Answer This Question', new_question_answer_path(@question)) %><br>
 <%= link_to('See All Answers', question_answers_path(@question)) %><br>
 
-<h4> Recent Answers </h4>
+<h4>
+  Recent Answers
+</h4>
 
 <% @question.answers.each do |answer| %>
   <%= answer.description %><br>
