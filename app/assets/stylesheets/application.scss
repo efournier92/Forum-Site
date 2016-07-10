@@ -1,0 +1,9 @@
+$main-color: #007dc1;
+$font-color: #002957;
+$font-sans: "Proxima Nova", "Helvetica Neue", Arial, Helvetica, sans-serif;
+
+body {
+  background-color: $main-color;
+  font-color:       $font-color;
+  font-family:      $font-sans;
+}

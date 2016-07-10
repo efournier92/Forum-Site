@@ -1,0 +1,23 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: rescue_mission_development
+  pool: 5
+  username: rescue_mission
+  password:
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: rescue_mission_test
+  pool: 5
+  username: rescue_mission
+  password:
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: rescue_mission_production
+  pool: 5
+  username: rescue_mission
+  password:
